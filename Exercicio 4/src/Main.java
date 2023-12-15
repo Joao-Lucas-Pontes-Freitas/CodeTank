@@ -5,7 +5,7 @@ public class Main {
         Scanner sc = new Scanner(System.in);
 
         int t;
-        System.out.println("Digite o npumero inteiro: ");
+        System.out.println("Digite o número inteiro: ");
         t = sc.nextInt();
 
         char[][] matriz = new char[t][t];
