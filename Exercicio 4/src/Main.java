@@ -4,9 +4,7 @@ public class Main {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
 
-        //Você deverá criar um programa Java que receberá um número inteiro e desenhará um triângulo equilátero começando pela base utilizando asteriscos. Por exemplo:
-
-        int t = 0;
+        int t;
         System.out.println("Digite o npumero inteiro: ");
         t = sc.nextInt();
 
@@ -35,6 +33,26 @@ public class Main {
             System.out.println();
             altura++;
             if(altura > t/2+1){
+                break;
+            }
+        }
+
+        meio1++;
+        meio2--;
+
+        for (int i = 0; i < t; i++) {
+            for (int j = 0; j < t; j++) {
+                if (j < meio2 && j > meio1) {
+                    System.out.print(matriz[i][j]);
+                } else {
+                    System.out.print(" ");
+                }
+            }
+            meio1++;
+            meio2--;
+            System.out.println();
+            altura--;
+            if(altura < 1){
                 break;
             }
         }
